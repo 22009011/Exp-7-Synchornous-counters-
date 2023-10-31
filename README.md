@@ -72,29 +72,29 @@ RegisterNumber:  212222240108
 ```
 ### UP COUNTER:
 ```
-module Counters(clk,A);
-input clk;
-output reg [3:0]A;
-always @(posedge clk)
+module upcounter(D,C,B,A,CLK);
+output reg D,C,B,A;
+input CLK;
+always @(posedge CLK)
 begin
-	A[3]=(((A[0])&(A[1])&(A[2]))^A[3]);
-	A[2]=(((A[0])&(A[1]))^A[2]);
-	A[1]=(A[0])^A[1];
-	A[0]=A[0]^1;
+	D=(C&B&A)^D;
+	C=(B&A)^C;
+	B=(A^B);
+	A=(1^A);
 end
 endmodule
 ```
 ### DOWN COUNTER:
 ```
-module dCounters(clk,A);
-input clk;
-output reg [3:0]A;
-always@(posedge clk)
+module downcounter(A,B,C,D,CLK);
+input CLK;
+output reg A,B,C,D;
+always@(posedge CLK)
 begin
-	A[3]=(((~A[0])&(~A[1])&(~A[2]))^A[3]);
-	A[2]=(((~A[0])&(~A[1]))^A[2]);
-	A[1]=(~A[0])^A[1];
-	A[0]=(~A[0])^1;
+	A=(((~B)&(~C)&(~D))^A);
+	B=(((~C)&(~D))^B);
+	C=((~D)^(C));
+	D=1^(D);
 end
 endmodule
 ```
@@ -105,18 +105,23 @@ endmodule
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER :
 ### UP COUNTER
-![244931874-87e978f7-3a69-429d-b103-97759ddcfaa3](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/6f911b6d-cbd4-4353-9717-2622ebfc79ae)
+![277394271-05dec14a-497c-4f72-b318-76f04bb3fcf2](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/052f6c6b-f5d4-4882-bf68-429feb068e6e)
 
 ### DOWN COUNTER:
-![244931880-83caeda7-7ecf-4445-a2a4-4e7a1ff31b7a](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/408a1753-5d6e-4af3-9578-d55465cca870)
+![277394345-40051694-11d8-4e4c-a99d-855a95f5fa9e](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/a7a99a7d-8e1a-43da-b505-d969cec8342c)
+
 
 
 ### TIMING DIGRAMS FOR COUNTER  
 ### UP COUNTER:
-![244931889-cf617a88-0d0c-4486-b5b7-85afb6e4eed8](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/3eb3fd9c-5d73-42ff-b163-11007a8a7dfc)
+![277394616-aeaa8dbd-47b6-46e2-ad84-17cb77070b46](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/42735530-c6c0-4a02-93e3-4d612bdcd131)
+
+
 
 ### DOWN COUNTER:
-![244931902-cd9c174e-2ad3-4a5e-8b21-a7218f621308](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/45da3fb0-4dd2-413c-a290-68b416dedfe4)
+![277394643-415c94e5-f598-4450-9737-b9cf0719237d](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/93c3c9c4-9e49-4e42-bcf3-8874263465ce)
+
+
 
 
 
