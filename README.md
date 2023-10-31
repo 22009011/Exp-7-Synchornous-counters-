@@ -114,12 +114,16 @@ endmodule
 
 ### TIMING DIGRAMS FOR COUNTER  
 ### UP COUNTER:
-![277394616-aeaa8dbd-47b6-46e2-ad84-17cb77070b46](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/42735530-c6c0-4a02-93e3-4d612bdcd131)
+![277394836-23f6daa9-8965-4a4e-8647-c9e546210c4c](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/6c0a00b7-99f9-4b4e-909f-ef0b6dd82254)
+
+
 
 
 
 ### DOWN COUNTER:
-![277394643-415c94e5-f598-4450-9737-b9cf0719237d](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/93c3c9c4-9e49-4e42-bcf3-8874263465ce)
+![277394897-36ff6040-7a93-49eb-9874-1d3239ff5160](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/245fbb71-d696-4d5c-855b-859a05811931)
+
+
 
 
 
@@ -128,10 +132,11 @@ endmodule
 
 ### TRUTH TABLE 
 ### UP COUNTER:
-![277085989-3bb80ba1-802f-4b29-9b05-e2883755bb61](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/684782e4-3c5c-4be7-a65a-d7d8ab83ff91)
+![277394616-aeaa8dbd-47b6-46e2-ad84-17cb77070b46](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/122705e7-c80c-4d28-a0ea-a87be4cab846)
 
 ### DOWN COUNTER:
-![277085999-26e364d2-d30e-48f8-9e46-5ceeb264fe4d](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/2170f171-88d0-4d25-a211-8ce4c09cac0c)
+![277394643-415c94e5-f598-4450-9737-b9cf0719237d](https://github.com/22009011/Exp-7-Synchornous-counters-/assets/118343461/3837a9bd-eb98-4eab-a659-129eeaf0937b)
+
 
 
 
